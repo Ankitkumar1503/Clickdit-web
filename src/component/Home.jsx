@@ -30,7 +30,7 @@ function Home() {
               <a
                 role="button"
                 tabIndex={0}
-                href="https://themes.stackbros.in"
+                href="#"
                 className="icon-link icon-link-hover btn btn-primary-grad"
               >
                 Get Started
@@ -197,7 +197,7 @@ function Home() {
                     data-rr-ui-event-key="nav-mission"
                     className="nav-link nav-link active"
                     tabIndex={0}
-                    href="https://themes.stackbros.in#"
+                    href="#"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -231,7 +231,7 @@ function Home() {
                     data-rr-ui-event-key="nav-vision"
                     tabIndex={-1}
                     className="nav-link nav-link"
-                    href="https://themes.stackbros.in#"
+                    href="#"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -263,7 +263,7 @@ function Home() {
                     data-rr-ui-event-key="nav-goal"
                     tabIndex={-1}
                     className="nav-link nav-link"
-                    href="https://themes.stackbros.in#"
+                    href="#"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -586,7 +586,7 @@ function Home() {
                 </p>
                 <a
                   className="btn btn-primary"
-                  href="https://themes.stackbros.in/folio-react/about/services-list"
+                  href="#"
                   data-discover="true"
                 >
                   Explore all services
@@ -602,7 +602,7 @@ function Home() {
                   <h6 className="mb-0">Lead Calling Simplified</h6>
                   <a
                     className="icon-link icon-link-hover text-body stretched-link ms-auto"
-                    href="https://themes.stackbros.in/folio-react/about/services-single"
+                    href="#"
                     data-discover="true"
                   >
                     <svg
@@ -632,7 +632,7 @@ function Home() {
                   <h6 className="mb-0">CSV Lead Uploads</h6>
                   <a
                     className="icon-link icon-link-hover text-body stretched-link ms-auto"
-                    href="https://themes.stackbros.in/folio-react/about/services-single"
+                    href="#"
                     data-discover="true"
                   >
                     <svg
@@ -662,7 +662,7 @@ function Home() {
                   <h6 className="mb-0">HubSpot CRM Sync</h6>
                   <a
                     className="icon-link icon-link-hover text-body stretched-link ms-auto"
-                    href="https://themes.stackbros.in/folio-react/about/services-single"
+                    href="#"
                     data-discover="true"
                   >
                     <svg
@@ -692,7 +692,7 @@ function Home() {
                   <h6 className="mb-0">Smart Follow-ups</h6>
                   <a
                     className="icon-link icon-link-hover text-body stretched-link ms-auto"
-                    href="https://themes.stackbros.in/folio-react/about/services-single"
+                    href="#"
                     data-discover="true"
                   >
                     <svg
@@ -722,7 +722,7 @@ function Home() {
                   <h6 className="mb-0">Sales Automation</h6>
                   <a
                     className="icon-link icon-link-hover text-body stretched-link ms-auto"
-                    href="https://themes.stackbros.in/folio-react/about/services-single"
+                    href="#"
                     data-discover="true"
                   >
                     <svg
@@ -751,7 +751,7 @@ function Home() {
                 <li className="list-inline-item me-0">
                   <a
                     className="icon-xl btn-transition bg-white border border-white border-opacity-10 d-flex justify-content-center align-items-center rounded-2"
-                    href="https://themes.stackbros.in/folio-react/ai-agency"
+                    href="#"
                     data-discover="true"
                   >
                     <img
@@ -764,7 +764,7 @@ function Home() {
                 <li className="list-inline-item me-0">
                   <a
                     className="icon-xl btn-transition bg-white border border-white border-opacity-10 d-flex justify-content-center align-items-center rounded-2"
-                    href="https://themes.stackbros.in/folio-react/ai-agency"
+                    href="#"
                     data-discover="true"
                   >
                     <img
@@ -777,7 +777,7 @@ function Home() {
                 <li className="list-inline-item me-0">
                   <a
                     className="icon-xl btn-transition bg-white border border-white border-opacity-10 d-flex justify-content-center align-items-center rounded-2"
-                    href="https://themes.stackbros.in/folio-react/ai-agency"
+                    href="#"
                     data-discover="true"
                   >
                     <img
@@ -790,7 +790,7 @@ function Home() {
                 <li className="list-inline-item me-0">
                   <a
                     className="icon-xl btn-transition bg-white border border-white border-opacity-10 d-flex justify-content-center align-items-center rounded-2"
-                    href="https://themes.stackbros.in/folio-react/ai-agency"
+                    href="#"
                     data-discover="true"
                   >
                     <img
@@ -803,7 +803,7 @@ function Home() {
                 <li className="list-inline-item me-0">
                   <a
                     className="icon-xl btn-transition bg-white border border-white border-opacity-10 d-flex justify-content-center align-items-center rounded-2"
-                    href="https://themes.stackbros.in/folio-react/ai-agency"
+                    href="#"
                     data-discover="true"
                   >
                     <img
@@ -816,7 +816,7 @@ function Home() {
                 <li className="list-inline-item me-0">
                   <a
                     className="icon-xl btn-transition bg-white border border-white border-opacity-10 d-flex justify-content-center align-items-center rounded-2"
-                    href="https://themes.stackbros.in/folio-react/ai-agency"
+                    href="#"
                     data-discover="true"
                   >
                     <img
@@ -829,7 +829,7 @@ function Home() {
                 <li className="list-inline-item me-0">
                   <a
                     className="icon-xl btn-transition bg-white border border-white border-opacity-10 d-flex justify-content-center align-items-center rounded-2"
-                    href="https://themes.stackbros.in/folio-react/ai-agency"
+                    href="#"
                     data-discover="true"
                   >
                     <img
@@ -842,7 +842,7 @@ function Home() {
                 <li className="list-inline-item me-0">
                   <a
                     className="icon-xl btn-transition bg-white border border-white border-opacity-10 d-flex justify-content-center align-items-center rounded-2"
-                    href="https://themes.stackbros.in/folio-react/ai-agency"
+                    href="#"
                     data-discover="true"
                   >
                     <img
@@ -856,7 +856,7 @@ function Home() {
               <a
                 role="button"
                 tabIndex={0}
-                href="https://themes.stackbros.in"
+                href="#"
                 className="icon-link icon-link-hover btn btn-outline-secondary"
               >
                 Uncover our AI capabilities
@@ -962,7 +962,7 @@ function Home() {
                       <h6 className="mb-0">
                         <a
                           className="text-white stretched-link"
-                          href="https://themes.stackbros.in/folio-react/portfolio/study1"
+                          href="#"
                           data-discover="true"
                         >
                           AI-Driven customer insights platform
@@ -993,7 +993,7 @@ function Home() {
                       <h6 className="mb-0">
                         <a
                           className="text-white stretched-link"
-                          href="https://themes.stackbros.in/folio-react/portfolio/study1"
+                          href="#"
                           data-discover="true"
                         >
                           Automated customer support with NLP
@@ -1024,7 +1024,7 @@ function Home() {
                       <h6 className="mb-0">
                         <a
                           className="text-white stretched-link"
-                          href="https://themes.stackbros.in/folio-react/portfolio/study1"
+                          href="#"
                           data-discover="true"
                         >
                           Smart inventory management for retail
@@ -1055,7 +1055,7 @@ function Home() {
                       <h6 className="mb-0">
                         <a
                           className="text-white stretched-link"
-                          href="https://themes.stackbros.in/folio-react/portfolio/study1"
+                          href="#"
                           data-discover="true"
                         >
                           AI-powered fraud detection
@@ -1086,7 +1086,7 @@ function Home() {
                       <h6 className="mb-0">
                         <a
                           className="text-white stretched-link"
-                          href="https://themes.stackbros.in/folio-react/portfolio/study1"
+                          href="#"
                           data-discover="true"
                         >
                           AI-Driven customer insights platform
@@ -1103,7 +1103,7 @@ function Home() {
               🔥 Kickstart your project! collaborate with us for success!
               <a
                 className="fw-semibold hover-underline-animation text-white"
-                href="https://themes.stackbros.in/folio-react/contact-1"
+                href=""
                 data-discover="true"
               >
                 Start today
@@ -1768,7 +1768,7 @@ function Home() {
                 <a
                   role="button"
                   tabIndex={0}
-                  href="https://themes.stackbros.in#"
+                  href="#"
                   className="icon-link icon-link-hover btn btn-primary"
                 >
                   Become a client

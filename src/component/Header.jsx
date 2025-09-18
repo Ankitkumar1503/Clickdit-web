@@ -54,10 +54,10 @@ const Header = () => {
               {navItems.map((item, index) => (
                 <li key={index} className="nav-item">
                   <a 
-                    className={`block py-3 px-4 rounded-lg text-center text-[16px] font-medium transition-all duration-200 ${
+                    className={`block py-[10px] px-[25px] rounded-lg text-center text-[16px] font-medium transition-all duration-200 ${
                       isActiveLink(item.path)
-                        ? "bg-purple-100 var(--bs-nav-link-hover-color)" // Active state
-                        : "text-gray-700 hover:bg-purple-50 hover:text-purple-600" // Default and hover state
+                        ? "bg-[#5f41fb14] text-[#5f41fb]" // Active state
+                        : "text-gray-700 hover:bg-[#5f41fb14] hover:text-[#5f41fb]" // Default and hover state
                     }`}
                     href={item.path}
                   >

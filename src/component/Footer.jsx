@@ -28,7 +28,7 @@ function Footer() {
                 {" "}
                 <a
                   className="btn btn-xs btn-icon btn-secondary"
-                  href="https://themes.stackbros.in/folio-react/ai-agency"
+                  href="#"
                   data-discover="true"
                 >
                   <svg
@@ -52,7 +52,7 @@ function Footer() {
                 {" "}
                 <a
                   className="btn btn-xs btn-icon btn-secondary"
-                  href="https://themes.stackbros.in/folio-react/ai-agency"
+                  href="#"
                   data-discover="true"
                 >
                   <svg
@@ -76,7 +76,7 @@ function Footer() {
                 {" "}
                 <a
                   className="btn btn-xs btn-icon btn-secondary"
-                  href="https://themes.stackbros.in/folio-react/ai-agency"
+                  href="#"
                   data-discover="true"
                 >
                   <svg
@@ -100,7 +100,7 @@ function Footer() {
                 {" "}
                 <a
                   className="btn btn-xs btn-icon btn-secondary"
-                  href="https://themes.stackbros.in/folio-react/ai-agency"
+                  href="#"
                   data-discover="true"
                 >
                   <svg
@@ -130,7 +130,7 @@ function Footer() {
                   <li className="nav-item">
                     <a
                       className="nav-link pt-0"
-                      href="https://themes.stackbros.in/folio-react/about/about-v1"
+                      href="#"
                       data-discover="true"
                     >
                       About us
@@ -139,7 +139,7 @@ function Footer() {
                   <li className="nav-item">
                     <a
                       className="nav-link"
-                      href="https://themes.stackbros.in/folio-react/ai-agency/contact-us.html"
+                      href="#"
                       data-discover="true"
                     >
                       Contact us
@@ -176,7 +176,7 @@ function Footer() {
                   <li className="nav-item">
                     <a
                       className="nav-link"
-                      href="https://themes.stackbros.in/folio-react/ai-agency/service-v1.html"
+                      href="#/service-v1.html"
                       data-discover="true"
                     >
                       Services
@@ -199,7 +199,7 @@ function Footer() {
                   <li className="nav-item">
                     <a
                       className="nav-link"
-                      href="https://themes.stackbros.in/folio-react/pricing-1"
+                      href="#"
                       data-discover="true"
                     >
                       Pricing <span className="badge bg-success ms-2">New</span>
@@ -226,7 +226,7 @@ function Footer() {
                   <li className="nav-item">
                     <a
                       className="nav-link"
-                      href="https://themes.stackbros.in/folio-react/ai-agency"
+                      href="#"
                       data-discover="true"
                     >
                       Success stories
@@ -263,7 +263,7 @@ function Footer() {
             <li className="nav-item">
               <a
                 className="nav-link small py-0"
-                href="https://themes.stackbros.in/folio-react/ai-agency"
+                href="#"
                 data-discover="true"
               >
                 Privacy policy
@@ -272,7 +272,7 @@ function Footer() {
             <li className="nav-item">
               <a
                 className="nav-link small py-0 pe-0"
-                href="https://themes.stackbros.in/folio-react/ai-agency"
+                href="#"
                 data-discover="true"
               >
                 Terms &amp; conditions
