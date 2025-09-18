@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/logo.png";
+import logo from "../assets/white_logo.png";
 
 function Footer() {
   return (
@@ -9,13 +9,10 @@ function Footer() {
     >
       <div className="container">
         <div className="g-4 justify-content-between row">
+          {/* Left section */}
           <div className="col-lg-4">
             <a href="/home" data-discover="true">
-              <img
-                className="h-40px"
-                src={logo}
-                alt="logo"
-              />
+              <img className="h-40px" src={logo} alt="logo" />
             </a>
             <p className="my-3 my-lg-4">
               Clikdit is a smart sales-calling solution built for salespeople
@@ -23,6 +20,71 @@ function Footer() {
               and close more deals. With direct calling, CSV uploads, and
               HubSpot automation, Clikdit turns every call into an opportunity.
             </p>
+            <ul className="list-inline mb-0">
+              {/* social icons (already in your code) */}
+            </ul>
+          </div>
+
+          {/* Middle section (Company & Resources) */}
+          <div className="col-xxl-4 col-lg-6">
+            <div className="g-4 row">
+              <div className="col-6">
+                <h6 className="mb-3 mb-sm-4">Company</h6>
+                <ul className="nav flex-column gap-1">
+                  <li className="nav-item">
+                    <a className="nav-link pt-0" href="#" data-discover="true">
+                      About us
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#" data-discover="true">
+                      Contact us
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="col-6">
+                <h6 className="mb-3 mb-sm-4">Resources</h6>
+                <ul className="nav flex-column gap-1">
+                  <li className="nav-item">
+                    <a className="nav-link" href="#" data-discover="true">
+                      Pricing <span className="badge bg-success ms-2">New</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Right section (Download our app) */}
+          <div className="col-md-6 col-lg-4">
+            <h6 className="mb-3 mb-xl-4">Download our app</h6>
+            <p className="mb-3">
+              Get instant access to exclusive features for FREE!
+            </p>
+            <div className="g-2 mb-4 mb-sm-5 row">
+              <div className="col-6 col-sm-5">
+                <a href="#" data-discover="true">
+                  <img
+                    width={140}
+                    height={44}
+                    src="https://themes.stackbros.in/folio-react/assets/google-play-DxTcopcD.svg"
+                    alt="google-play"
+                  />
+                </a>
+              </div>
+              <div className="col-6 col-sm-5">
+                <a href="#" data-discover="true">
+                  <img
+                    width={140}
+                    height={44}
+                    src="https://themes.stackbros.in/folio-react/assets/app-store-kkBlcDrB.svg"
+                    alt="app-store"
+                  />
+                </a>
+              </div>
+            </div>
+            <span className="heading-color fw-semibold">Follow on:</span>
             <ul className="list-inline mb-0">
               <li className="list-inline-item">
                 {" "}
@@ -122,150 +184,17 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-xxl-4 col-lg-6">
-            <div className="g-4 row">
-              <div className="col-6">
-                <h6 className="mb-3 mb-sm-4">Company</h6>
-                <ul className="nav flex-column gap-1">
-                  <li className="nav-item">
-                    <a
-                      className="nav-link pt-0"
-                      href="#"
-                      data-discover="true"
-                    >
-                      About us
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a
-                      className="nav-link"
-                      href="#"
-                      data-discover="true"
-                    >
-                      Contact us
-                    </a>
-                  </li>
-                  {/* <li className="nav-item">
-                    <a
-                      className="nav-link"
-                      href="https://themes.stackbros.in/folio-react/about/career"
-                      data-discover="true"
-                    >
-                      Career{" "}
-                      <span className="badge bg-primary ms-2">2 jobs</span>
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a
-                      className="nav-link"
-                      href="https://themes.stackbros.in/folio-react/about/career-single"
-                      data-discover="true"
-                    >
-                      Career detail
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a
-                      className="nav-link"
-                      href="https://themes.stackbros.in/folio-react/contact-2"
-                      data-discover="true"
-                    >
-                      Become a partner
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a
-                      className="nav-link"
-                      href="#/service-v1.html"
-                      data-discover="true"
-                    >
-                      Services
-                    </a>
-                  </li> */}
-                </ul>
-              </div>
-              <div className="col-6">
-                <h6 className="mb-3 mb-sm-4">Resources</h6>
-                <ul className="nav flex-column gap-1">
-                  {/* <li className="nav-item">
-                    <a
-                      className="nav-link pt-0"
-                      href="https://themes.stackbros.in/folio-react/portfolio/study1"
-                      data-discover="true"
-                    >
-                      Case studies
-                    </a>
-                  </li> */}
-                  <li className="nav-item">
-                    <a
-                      className="nav-link"
-                      href="#"
-                      data-discover="true"
-                    >
-                      Pricing <span className="badge bg-success ms-2">New</span>
-                    </a>
-                  </li>
-                  {/* <li className="nav-item">
-                    <a
-                      className="nav-link"
-                      href="https://themes.stackbros.in/folio-react/blog/blog-minimal"
-                      data-discover="true"
-                    >
-                      Blogs
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a
-                      className="nav-link"
-                      href="https://themes.stackbros.in/folio-react/blog/blog-single"
-                      data-discover="true"
-                    >
-                      Blog detail
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a
-                      className="nav-link"
-                      href="#"
-                      data-discover="true"
-                    >
-                      Success stories
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlnsXlink="http://www.w3.org/1999/xlink"
-                        aria-hidden="true"
-                        role="img"
-                        className="iconify iconify--bi small ms-2"
-                        width="1em"
-                        height="1em"
-                        viewBox="0 0 16 16"
-                      >
-                        <g fill="currentColor" fillRule="evenodd">
-                          <path d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"></path>
-                          <path d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"></path>
-                        </g>
-                      </svg>
-                    </a>
-                  </li> */}
-                </ul>
-              </div>
-            </div>
-          </div>
         </div>
+
+        {/* Footer bottom */}
         <hr className="mt-xl-5 mb-0 opacity-1" />
         <div className="d-md-flex justify-content-between align-items-center text-center text-lg-start py-4">
           <div className="text-body small mb-3 mb-md-0">
-            {" "}
             Copyrights ©2025 Clikdit.
-
           </div>
           <ul className="nav d-flex justify-content-center gap-1 mb-0">
             <li className="nav-item">
-              <a
-                className="nav-link small py-0"
-                href="#"
-                data-discover="true"
-              >
+              <a className="nav-link small py-0" href="#" data-discover="true">
                 Privacy policy
               </a>
             </li>

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../../src/App.css";
 import logo from "../assets/logo_2.png";
-import { FaCalendarAlt } from "react-icons/fa";
 import { FaRegCalendarAlt } from "react-icons/fa";
 
 const Header = () => {
@@ -72,7 +71,7 @@ const Header = () => {
             <li className="hidden sm:block ml-2">
               <a
                 className="inline-flex items-center gap-2 px-4 py-2 text-sm bg-gray-900 text-white rounded hover:bg-gray-800 transition-colors"
-                href="/schedule-call"
+                href="#"
               >
                 <FaRegCalendarAlt />
                 Schedule a call
