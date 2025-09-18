@@ -1,13 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../../src/App.css";
 import logo from "../assets/logo_2.png";
+import { FaCalendarAlt } from "react-icons/fa";
+import { FaRegCalendarAlt } from "react-icons/fa";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const [currentPath, setCurrentPath] = useState('');
+  
+  useEffect(() => {
+    // Get current path for active state
+    setCurrentPath(window.location.pathname);
+  }, []);
+  
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  // Function to check if link is active
+  const isActiveLink = (path) => {
+    return currentPath === path;
+  };
+
+  // Navigation items
+  const navItems = [
+    { path: '/', label: 'Home' },
+    { path: '/product', label: 'Product' },
+    { path: '/about', label: 'About Us' },
+    { path: '/contact', label: 'Contact Us' }
+  ];
 
   return (
     <header className="header-sticky header-absolute">
@@ -20,71 +41,59 @@ const Header = () => {
               alt="logo"
             />
           </a>
-
+          
+          {/* Mobile menu - show/hide based on isMenuOpen state */}
           <div
-            className={`navbar-collapse collapse ${isMenuOpen ? "show" : ""}`}
+            className={`${
+              isMenuOpen 
+                ? "block absolute top-full left-0 w-full bg-white shadow-lg z-50" 
+                : "hidden"
+            } xl:block xl:static xl:w-auto xl:bg-transparent xl:shadow-none ml-[272px] mr-[10px]`}
           >
-            <ul className="navbar-nav navbar-nav-scroll mx-auto">
-              <li className="nav-item">
-                <a className="nav-link active" href="/">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/product">
-                  Product
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/about">
-                  About Us
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/contact">
-                  Contact Us
-                </a>
-              </li>
+            <ul className="flex flex-col xl:flex-row xl:mx-auto p-2 xl:p-0 space-y-2 xl:space-y-0 xl:space-x-2 items-center">
+              {navItems.map((item, index) => (
+                <li key={index} className="nav-item">
+                  <a 
+                    className={`block py-3 px-4 rounded-lg text-center text-[16px] font-medium transition-all duration-200 ${
+                      isActiveLink(item.path)
+                        ? "bg-purple-100 var(--bs-nav-link-hover-color)" // Active state
+                        : "text-gray-700 hover:bg-purple-50 hover:text-purple-600" // Default and hover state
+                    }`}
+                    href={item.path}
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
-          <ul className="nav align-items-center dropdown-hover ms-sm-2">
-            <li className="nav-item ms-2 d-none d-sm-block">
-              <a className="btn btn-sm btn-dark mb-0" href="/schedule-call">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                  aria-hidden="true"
-                  role="img"
-                  className="iconify iconify--bi me-2"
-                  width="1em"
-                  height="1em"
-                  viewBox="0 0 16 16"
-                >
-                  <g fill="currentColor">
-                    <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
-                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
-                  </g>
-                </svg>
+          <ul className="flex items-center ml-auto">
+            <li className="hidden sm:block ml-2">
+              <a
+                className="inline-flex items-center gap-2 px-4 py-2 text-sm bg-gray-900 text-white rounded hover:bg-gray-800 transition-colors"
+                href="/schedule-call"
+              >
+                <FaRegCalendarAlt />
                 Schedule a call
               </a>
             </li>
-            {/* <li className="nav-item">
+            <li>
               <button
-                className={`navbar-toggler ms-sm-3 p-2 ${
-                  isMenuOpen ? "active" : ""
+                className={`xl:hidden ml-3 p-2 rounded focus:outline-none focus:ring-2 focus:ring-gray-200 ${
+                  isMenuOpen ? "bg-gray-100" : ""
                 }`}
                 type="button"
                 onClick={toggleMenu}
                 aria-label="Toggle navigation"
               >
-                <span className="navbar-toggler-animation">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </span>
+                <div className="w-6 h-6 flex flex-col justify-center items-center">
+                  <span className={`block w-5 h-0.5 bg-gray-600 transition-all duration-300 ${isMenuOpen ? 'rotate-45 translate-y-1' : ''}`}></span>
+                  <span className={`block w-5 h-0.5 bg-gray-600 transition-all duration-300 mt-1 ${isMenuOpen ? 'opacity-0' : ''}`}></span>
+                  <span className={`block w-5 h-0.5 bg-gray-600 transition-all duration-300 mt-1 ${isMenuOpen ? '-rotate-45 -translate-y-1' : ''}`}></span>
+                </div>
               </button>
-            </li> */}
+            </li>
           </ul>
         </div>
       </nav>
