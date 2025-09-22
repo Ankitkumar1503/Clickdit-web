@@ -20,12 +20,12 @@ function Home() {
           <div className="row">
             <div className="mb-5 mb-md-0 col-lg-6 col-md-7">
               <h1 className="display-5 mb-3 mb-md-4">
-                Smart Sales Calls with{" "}
+                Smart Sales Automation with{" "}
                 <span className="text-primary">Clikdit</span>
               </h1>
               <p className="lead mb-3 mb-md-4">
                 Boost your sales team’s efficiency with seamless calling, lead
-                management, and HubSpot automation—all in one app.
+                management, and CRM automation—all in one app.
               </p>
               <a
                 role="button"
@@ -66,7 +66,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="pt-4 pt-sm-6">
+      <section className="pt-sm-6">
         <div className="container">
           <div className="g-4 g-lg-5 row">
             <div className="mb-4 mb-sm-0 col-md-4">
@@ -90,7 +90,7 @@ function Home() {
                 </div>
                 <h6 className="mb-3">Effortless Lead Calling</h6>
                 <p className="mb-0">
-                  Upload your leads in a CSV file and start calling instantly,
+                  Upload your leads and start calling instantly,
                   just like a regular phone—directly from Clikdit.
                 </p>
               </div>
@@ -118,10 +118,10 @@ function Home() {
                     />
                   </svg>
                 </div>
-                <h6 className="mb-3">HubSpot Integration & Automation</h6>
+                <h6 className="mb-3">CRM Integration & Automation</h6>
                 <p className="mb-0">
                   Every call is automatically tracked. Our n8n workflow creates
-                  deals in HubSpot CRM and schedules follow-ups for you.
+                  deals in CRM and schedules follow-ups for you.
                 </p>
               </div>
             </div>
@@ -147,14 +147,14 @@ function Home() {
                 <h6 className="mb-3">Recent Calls & Follow-ups</h6>
                 <p className="mb-0">
                   Stay on top of your pipeline with easy access to recent calls
-                  and follow-up tasks synced from HubSpot.
+                  and follow-up tasks synced from CRM.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="position-relative pt-0 pb-0 pb-xl-8">
+      {/* <section className="position-relative pt-0 pb-0 pb-xl-8">
         <div className="px-xl-7 container">
           <div className="align-items-center row">
             <div className="position-relative pe-xl-6 mb-5 mb-lg-0 col-lg-6">
@@ -521,7 +521,7 @@ function Home() {
           </div>
         </div>
         <div className="position-absolute top-100 start-0 translate-middle ms-9 mt-4 z-index-9 d-none d-xl-block">
-          {/* <img
+          <img
             src="https://themes.stackbros.in/folio-react/assets/ai-hand-ncs6m_pn.png"
             className="aos ms-9 ps-6 aos-init"
             data-aos="fade-right"
@@ -529,9 +529,9 @@ function Home() {
             data-aos-duration={800}
             data-aos-easing="ease-in-out"
             alt="ai hand"
-          /> */}
+          />
         </div>
-      </section>
+      </section> */}
       <section className="py-0 position-relative">
         <div className="position-absolute end-0 bottom-0 me-lg-7 mb-n7 z-index-2 d-none d-md-block">
           <img
@@ -629,7 +629,7 @@ function Home() {
                     className="me-3"
                     alt="service icon"
                   />
-                  <h6 className="mb-0">CSV Lead Uploads</h6>
+                  <h6 className="mb-0">Lead Uploads</h6>
                   <a
                     className="icon-link icon-link-hover text-body stretched-link ms-auto"
                     href="#"
@@ -659,7 +659,7 @@ function Home() {
                     className="me-3"
                     alt="service icon"
                   />
-                  <h6 className="mb-0">HubSpot CRM Sync</h6>
+                  <h6 className="mb-0">CRM Sync</h6>
                   <a
                     className="icon-link icon-link-hover text-body stretched-link ms-auto"
                     href="#"
@@ -883,7 +883,7 @@ function Home() {
       </section>
 
       <>
-        <section className="overflow-hidden">
+        {/* <section className="overflow-hidden">
           <div className="mb-5 container">
             <div className="row">
               <div className="col-lg-5 col-sm-8">
@@ -1110,8 +1110,8 @@ function Home() {
               </a>
             </p>
           </div>
-        </section>
-        <section className="pt-0">
+        </section> */}
+        <section className="pt-6">
           <div className="container">
             <div className="row">
               <div className="col-md-4">
@@ -1128,7 +1128,7 @@ function Home() {
                       </h4>
                       <span className="display-2 text-primary mb-0">+</span>
                     </div>
-                    <p className="px-3 py-2 bg-body mt-n3 mt-md-n4 position-relative">
+                    <p className="px-3 py-2 bg-body mt-n3 position-relative">
                       Total projects completed
                     </p>
                   </div>
@@ -1147,7 +1147,7 @@ function Home() {
                   </h4>
                   <span className="display-2 text-purple mb-0">+</span>
                 </div>
-                <p className="px-3 py-2 bg-body mt-n3 mt-md-n4 position-relative">
+                <p className="px-3 py-2 bg-body mt-n3 position-relative">
                   Awards and accolades
                 </p>
               </div>
@@ -1167,7 +1167,7 @@ function Home() {
                       </h4>
                       <span className="display-2 text-pink mb-0">K</span>
                     </div>
-                    <p className="px-3 py-2 bg-body mt-n3 mt-md-n4 position-relative">
+                    <p className="px-3 py-2 bg-body mt-n3 position-relative">
                       Satisfied users
                     </p>
                   </div>
@@ -1881,7 +1881,7 @@ function Home() {
             </div>
           </div>
         </section>
-        <section className="position-relative py-0">
+        {/* <section className="position-relative py-0">
           <div className="position-absolute top-100 start-0 translate-middle ms-9 mt-n8 z-index-9 d-none d-lg-block">
             <img
               src="https://themes.stackbros.in/folio-react/assets/ai-robot-3-BLoiGBaG.png"
@@ -2011,7 +2011,7 @@ function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </>
     </>
   );

@@ -12641,7 +12641,7 @@ fieldset:disabled .btn {
     padding-top: 6rem !important;
   }
   .pt-md-8 {
-    padding-top: 8rem !important;
+    padding-top: 4rem !important;
   }
   .pt-md-9 {
     padding-top: 11rem !important;
@@ -19007,8 +19007,8 @@ video {
   width: 100%;
 }
 section {
-  padding-top: 9rem;
-  padding-bottom: 9rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 @media (max-width: 1199.98px) {
   section {
@@ -20353,4 +20353,10 @@ button.text-primary-hover:hover {
 }
 .fa-rotate-270 {
   transform: rotate(270deg);
+}
+
+.icon_change {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

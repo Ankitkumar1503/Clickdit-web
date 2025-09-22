@@ -1,16 +1,11 @@
-import React, { useState, useEffect, use } from "react";
+import React, { useState, useEffect } from "react";
 import "../../src/App.css";
-import logoBlack from "../assets/logoblack.png";
-import logoWhite from "../assets/logoWhite.png";
+import logo from "../assets/logo_2.png";
 import { FaRegCalendarAlt } from "react-icons/fa";
-import { useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [currentPath, setCurrentPath] = useState('');
-  const location = useLocation();
-
-  const isDarkPage = location.pathname === '/about' || location.pathname === '/contact';
   
   useEffect(() => {
     // Get current path for active state
@@ -41,7 +36,7 @@ const Header = () => {
           <a className="navbar-brand me-0" href="/" data-discover="true">
             <img
               className="light-mode-item navbar-brand-item w-100 h-40px"
-              src={isDarkPage ? logoWhite : logoBlack}
+              src={logo}
               alt="logo"
             />
           </a>
@@ -73,19 +68,15 @@ const Header = () => {
           </div>
 
           <ul className="flex items-center ml-auto">
-           <li className="hidden sm:block ml-2">
-      <a
-        className={`inline-flex items-center gap-2 px-4 py-2 text-sm rounded transition-colors 
-          ${isDarkPage 
-            ? "bg-white text-black hover:bg-gray-200"   // Light button for dark bg
-            : "bg-gray-900 text-white hover:bg-gray-800"   // Dark button for light bg
-          }`}
-        href="#"
-      >
-        <FaRegCalendarAlt />
-        Schedule a call
-      </a>
-    </li>
+            <li className="hidden sm:block ml-2">
+              <a
+                className="inline-flex items-center gap-2 px-4 py-2 text-sm bg-gray-900 text-white rounded hover:bg-gray-800 transition-colors"
+                href="#"
+              >
+                <FaRegCalendarAlt />
+                Schedule a call
+              </a>
+            </li>
             <li>
               <button
                 className={`xl:hidden ml-3 p-2 rounded focus:outline-none focus:ring-2 focus:ring-gray-200 ${

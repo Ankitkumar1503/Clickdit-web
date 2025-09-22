@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/white_logo.png";
+import logo from "../assets/logoWhite.png";
 
 function Footer() {
   return (
@@ -17,8 +17,8 @@ function Footer() {
             <p className="my-3 my-lg-4">
               Clikdit is a smart sales-calling solution built for salespeople
               and teams who want to simplify outreach, manage leads efficiently,
-              and close more deals. With direct calling, CSV uploads, and
-              HubSpot automation, Clikdit turns every call into an opportunity.
+              and close more deals. With direct calling, Leads uploads, and
+              CRM automation, Clikdit turns every call into an opportunity.
             </p>
             <ul className="list-inline mb-0">
               {/* social icons (already in your code) */}
