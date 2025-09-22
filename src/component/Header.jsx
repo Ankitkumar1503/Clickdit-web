@@ -1,6 +1,6 @@
 import React, { useState, useEffect, use } from "react";
 import "../../src/App.css";
-import logoBlack from "../assets/logoblack.png";
+import logoBlack from "../assets/logoBlack.png";
 import logoWhite from "../assets/logoWhite.png";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { useLocation } from "react-router-dom";
