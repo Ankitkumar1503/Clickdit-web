@@ -1,7 +1,30 @@
-import React from "react";
+import React, {useState} from "react";
 import { IoCallOutline } from "react-icons/io5";
 
 function About() {
+
+  const [openAccordion, setOpenAccordion] = useState(0);
+
+  const toggleAccordion = (index) => {
+    setOpenAccordion(openAccordion === index ? -1 : index);
+  };
+
+   const accordionItems = [
+    {
+      title: "Seamless Lead Calling",
+      content: "Our expert team delivers a functional prototype within 24 hours, ensuring rapid progress and immediate feedback."
+    },
+    {
+      title: "Smart CRM Automation", 
+      content: "We provide a range of tools, guides, and best practices to help you create designs, websites."
+    },
+    {
+      title: "24/7 Dedicated Support",
+      content: "We provide a range of tools, guides, and best practices to help you create designs, websites."
+    }
+  ];
+
+
   return (
     <>
       <section className="bg-dark position-relative pt-xl-8 pb-0 overflow-hidden">
@@ -31,12 +54,12 @@ function About() {
               >
                 <ol className="breadcrumb pt-0">
                   <li className="breadcrumb-item">
-                    <a href="/folio-react/home" data-discover="true">
+                    <a href="/" data-discover="true">
                       Home
                     </a>
                   </li>
                   <li className="breadcrumb-item active" aria-current="page">
-                    Services
+                    About Us
                   </li>
                 </ol>
               </nav>
@@ -89,7 +112,7 @@ function About() {
         <div className="container">
           <div className="g-4 g-lg-5 row">
             <div className="col-xl-4 col-md-6">
-              <div className="card-bg-grad-hover card-content-hover bg-secondary bg-opacity-75 h-100 p-4 p-sm-5 card">
+              <div className="card-bg-grad-hover card-content-hover bg-secondary bg-opacity-75 h-100 p-sm-5 card">
                 <div className="card-header bg-transparent p-0 pb-5">
                   <img
                     src="https://themes.stackbros.in/folio-react/assets/development-BHhnJp6Z.png"
@@ -364,7 +387,7 @@ function About() {
               </div>
             </div>
           </div>
-          <p className="mb-0 mt-5 text-center heading-color">
+          {/* <p className="mb-0 mt-5 text-center heading-color">
             🔥 Let’s create something great work together.
             <a
               className="fw-bold hover-underline-animation heading-color"
@@ -373,198 +396,62 @@ function About() {
             >
               Got a project in mind?
             </a>
-          </p>
+          </p> */}
         </div>
       </section>
       <section className="pt-0">
-        <div className="container">
-          <div className="row">
-            <div className="position-relative col-md-6">
-              <div className="position-absolute top-0 start-0 ms-xl-5">
-                <img
-                  src="	https://themes.stackbros.in/folio-react/assets/rocket-02-k6WSUtnv.png"
-                  height={150}
-                  className="h-150px rotate-335"
-                  alt="rocket image"
-                />
-              </div>
-              1
-              <div className="ps-xl-7 row">
-                <div className="col-sm-8">
-                  <img
-                    src="	https://themes.stackbros.in/folio-react/assets/13-BL6Cm7m7.jpg"
-                    className="rounded-pill"
-                    alt="image"
-                  />
-                </div>
-                {/* <div className="mt-auto ms-lg-n5 mb-5 col-lg-5 col-md-8 col-sm-4">
-                  <div className="shadow rounded text-center p-0 card">
-                    <div className="p-3 card-body">
-                      <h6 className="h1">4.8</h6>
-                      <ul className="list-inline d-flex justify-content-center gap-2 mb-1">
-                        <li className="list-inline-item me-0">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlnsXlink="http://www.w3.org/1999/xlink"
-                            aria-hidden="true"
-                            role="img"
-                            className="iconify iconify--bi text-warning"
-                            width="1em"
-                            height="1em"
-                            viewBox="0 0 16 16"
-                          >
-                            <path
-                              fill="currentColor"
-                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327l4.898.696c.441.062.612.636.282.95l-3.522 3.356l.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                            />
-                          </svg>
-                        </li>
-                        <li className="list-inline-item me-0">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlnsXlink="http://www.w3.org/1999/xlink"
-                            aria-hidden="true"
-                            role="img"
-                            className="iconify iconify--bi text-warning"
-                            width="1em"
-                            height="1em"
-                            viewBox="0 0 16 16"
-                          >
-                            <path
-                              fill="currentColor"
-                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327l4.898.696c.441.062.612.636.282.95l-3.522 3.356l.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                            />
-                          </svg>
-                        </li>
-                        <li className="list-inline-item me-0">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlnsXlink="http://www.w3.org/1999/xlink"
-                            aria-hidden="true"
-                            role="img"
-                            className="iconify iconify--bi text-warning"
-                            width="1em"
-                            height="1em"
-                            viewBox="0 0 16 16"
-                          >
-                            <path
-                              fill="currentColor"
-                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327l4.898.696c.441.062.612.636.282.95l-3.522 3.356l.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                            />
-                          </svg>
-                        </li>
-                        <li className="list-inline-item me-0">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlnsXlink="http://www.w3.org/1999/xlink"
-                            aria-hidden="true"
-                            role="img"
-                            className="iconify iconify--bi text-warning"
-                            width="1em"
-                            height="1em"
-                            viewBox="0 0 16 16"
-                          >
-                            <path
-                              fill="currentColor"
-                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327l4.898.696c.441.062.612.636.282.95l-3.522 3.356l.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                            />
-                          </svg>
-                        </li>
-                        <li className="list-inline-item me-0">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlnsXlink="http://www.w3.org/1999/xlink"
-                            aria-hidden="true"
-                            role="img"
-                            className="iconify iconify--bi text-warning"
-                            width="1em"
-                            height="1em"
-                            viewBox="0 0 16 16"
-                          >
-                            <path
-                              fill="currentColor"
-                              d="M5.354 5.119L7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327l4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356l.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403a.6.6 0 0 1 .085-.302a.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894l-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77l-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223L8 2.226z"
-                            />
-                          </svg>
-                        </li>
-                      </ul>
-                      <span>2855 Reviews</span>
-                    </div>
-                    <div className="bg-dark p-3 card-footer">
-                      <img
-                        src="https://themes.stackbros.in/folio-react/assets/trustpilot-light-DeLSPSHZ.svg"
-                        className="h-30px"
-                        alt="trustpilotImg"
-                      />
-                    </div>
-                  </div>
-                </div> */}
-              </div>
-            </div>
-            <div className="ms-auto mt-5 mt-md-0 col-lg-5 col-md-6">
-              <h2>Why choose us?</h2>
-              <div
-                id="accordionFaq"
-                className="accordion-icon accordion-border-bottom mt-5 accordion"
-              >
-                <div className="mb-3 accordion-item">
-                  <h2 id="heading-1" className="font-base accordion-header">
+      <div className="container mx-auto px-4">
+        <div className="flex justify-center">
+          <div className="w-full max-w-lg md:max-w-xl lg:max-w-2xl mt-5 md:mt-0">
+            <h2 className="text-2xl font-bold mb-5">Why choose us?</h2>
+            <div className="space-y-3">
+              {accordionItems.map((item, index) => (
+                <div key={index} className="border-b border-gray-200">
+                  <h2 className="font-normal">
                     <button
                       type="button"
-                      aria-expanded="true"
-                      className="accordion-button"
+                      onClick={() => toggleAccordion(index)}
+                      className="w-full text-left p-4 bg-white hover:bg-gray-50 transition-colors duration-200 flex justify-between items-center"
+                      aria-expanded={openAccordion === index}
                     >
-                      <span className="lead">Seamless Lead Calling</span>
-                    </button>
-                  </h2>
-                  <div className="accordion-collapse collapse show">
-                    <div className="pb-0 accordion-body">
-                      Our expert team delivers a functional prototype within 24
-                      hours, ensuring rapid progress and immediate feedback.
-                    </div>
-                  </div>
-                </div>
-                <div className="mb-3 accordion-item">
-                  <h2 id="heading-2" className="font-base accordion-header">
-                    <button
-                      type="button"
-                      aria-expanded="false"
-                      className="accordion-button collapsed"
-                    >
-                      <span className="lead">Smart CRM Automation</span>
-                    </button>
-                  </h2>
-                  <div className="accordion-collapse collapse">
-                    <div className="pb-0 accordion-body">
-                      We provide a range of tools, guides, and best practices to
-                      help you create designs, websites.
-                    </div>
-                  </div>
-                </div>
-                <div className="mb-3 accordion-item">
-                  <h2 id="heading-3" className="font-base accordion-header">
-                    <button
-                      type="button"
-                      aria-expanded="false"
-                      className="accordion-button collapsed"
-                    >
-                      <span className="lead">
-                        24/7 Dedicated Support
+                      <span className="text-lg font-medium text-gray-900">
+                        {item.title}
                       </span>
+                      <svg
+                        className={`w-5 h-5 transition-transform duration-200 ${
+                          openAccordion === index ? 'rotate-180' : ''
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
                     </button>
                   </h2>
-                  <div className="accordion-collapse collapse">
-                    <div className="pb-0 accordion-body">
-                      We provide a range of tools, guides, and best practices to
-                      help you create designs, websites.
+                  <div
+                    className={`overflow-hidden transition-all duration-300 ${
+                      openAccordion === index 
+                        ? 'max-h-96 opacity-100' 
+                        : 'max-h-0 opacity-0'
+                    }`}
+                  >
+                    <div className="px-4 pb-4 pt-0">
+                      {item.content}
                     </div>
                   </div>
                 </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
       <section className="bg-secondary-grad position-relative overflow-hidden">
         <div className="position-absolute bottom-0 start-0 mb-n9 d-none d-sm-block">
           <img
@@ -633,15 +520,15 @@ function About() {
                       id="exampleCheck1"
                     />
                     <label className="form-check-label" htmlFor="exampleCheck1">
-                      I agree that my data is
-                      <a
+                      I agree that my data is collected and stored.
+                      {/* <a
                         className="hover-underline-animation text-primary-hover"
                         href="/folio-react/about/services-grid"
                         data-discover="true"
                       >
                         collected and stored
-                      </a>
-                      .
+                      </a> */}
+                      
                     </label>
                   </div>
                 </div>
