@@ -1152,7 +1152,7 @@ function Home() {
           <span className="display-2 text-purple mb-0">+</span>
         </div>
         <p className="px-3 py-2 bg-body mt-n3 position-relative">
-          Automated deals created in HubSpot
+          Automated deals created in CRM
         </p>
       </div>
 
