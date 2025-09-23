@@ -1112,70 +1112,78 @@ function Home() {
           </div>
         </section> */}
         <section className="pt-6">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-4">
-                <div className="d-flex justify-content-between">
-                  <div className="text-center">
-                    <div className="d-flex">
-                      <h4
-                        className="purecounter display-2 mb-0"
-                        data-purecounter-start={0}
-                        data-purecounter-end={105}
-                        data-purecounter-delay={300}
-                      >
-                        <span>105</span>
-                      </h4>
-                      <span className="display-2 text-primary mb-0">+</span>
-                    </div>
-                    <p className="px-3 py-2 bg-body mt-n3 position-relative">
-                      Total projects completed
-                    </p>
-                  </div>
-                  <div className="vr bg-primary-grad opacity-1 my-3" />
-                </div>
-              </div>
-              <div className="text-center col-md-4">
-                <div className="d-flex justify-content-center">
-                  <h4
-                    className="purecounter display-2 mb-0"
-                    data-purecounter-start={0}
-                    data-purecounter-end={35}
-                    data-purecounter-delay={300}
-                  >
-                    <span>35</span>
-                  </h4>
-                  <span className="display-2 text-purple mb-0">+</span>
-                </div>
-                <p className="px-3 py-2 bg-body mt-n3 position-relative">
-                  Awards and accolades
-                </p>
-              </div>
-              <div className="col-md-4">
-                <div className="d-flex justify-content-between">
-                  <div className="vr bg-primary-grad opacity-1 my-3" />
-                  <div className="text-center">
-                    <div className="d-flex">
-                      <span className="display-2 heading-color mb-0">&gt;</span>
-                      <h4
-                        className="purecounter display-2 mb-0"
-                        data-purecounter-start={0}
-                        data-purecounter-end={10}
-                        data-purecounter-delay={300}
-                      >
-                        <span>10</span>
-                      </h4>
-                      <span className="display-2 text-pink mb-0">K</span>
-                    </div>
-                    <p className="px-3 py-2 bg-body mt-n3 position-relative">
-                      Satisfied users
-                    </p>
-                  </div>
-                </div>
-              </div>
+  <div className="container">
+    <div className="row">
+
+      {/* Leads Managed */}
+      <div className="col-md-4">
+        <div className="d-flex justify-content-between">
+          <div className="text-center">
+            <div className="d-flex">
+              <h4
+                className="purecounter display-2 mb-0"
+                data-purecounter-start={0}
+                data-purecounter-end={5000}
+                data-purecounter-delay={300}
+              >
+                <span>500</span>
+              </h4>
+              <span className="display-2 text-primary mb-0">+</span>
             </div>
+            <p className="px-3 py-2 bg-body mt-n3 position-relative">
+              Leads managed via Clikdit
+            </p>
           </div>
-        </section>
+          <div className="vr bg-primary-grad opacity-1 my-3" />
+        </div>
+      </div>
+
+      {/* Automated Deals */}
+      <div className="text-center col-md-4">
+        <div className="d-flex justify-content-center">
+          <h4
+            className="purecounter display-2 mb-0"
+            data-purecounter-start={0}
+            data-purecounter-end={1200}
+            data-purecounter-delay={300}
+          >
+            <span>120</span>
+          </h4>
+          <span className="display-2 text-purple mb-0">+</span>
+        </div>
+        <p className="px-3 py-2 bg-body mt-n3 position-relative">
+          Automated deals created in HubSpot
+        </p>
+      </div>
+
+      {/* Active Sales Users */}
+      <div className="col-md-4">
+        <div className="d-flex justify-content-between">
+          <div className="vr bg-primary-grad opacity-1 my-3" />
+          <div className="text-center">
+            <div className="d-flex">
+              <span className="display-2 heading-color mb-0">&gt;</span>
+              <h4
+                className="purecounter display-2 mb-0"
+                data-purecounter-start={0}
+                data-purecounter-end={300}
+                data-purecounter-delay={300}
+              >
+                <span>30</span>
+              </h4>
+              <span className="display-2 text-pink mb-0"></span>
+            </div>
+            <p className="px-3 py-2 bg-body mt-n3 position-relative">
+              Active sales users on Clikdit
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
         <section className="pt-0">
   <div className="relative container">
     {/* Floating Avatars */}
