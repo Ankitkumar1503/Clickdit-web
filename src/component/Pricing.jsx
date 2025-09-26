@@ -158,7 +158,7 @@ function Pricing() {
                         href="#"
                         data-discover="true"
                       >
-                        Purchase
+                        Buy Now
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -305,7 +305,7 @@ function Pricing() {
                         href="#"
                         data-discover="true"
                       >
-                        Purchase
+                        Buy Now
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           xmlnsXlink="http://www.w3.org/1999/xlink"

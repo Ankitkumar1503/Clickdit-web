@@ -52,16 +52,16 @@ function Product() {
       // status: "Active",
       benefits: ["Increase follow-up completion by 85%", "Reduce missed opportunities by 75%", "Automate personalized customer touchpoints"]
     },
-    {
-      id: 6,
-      name: "Workflow Integration",
-      category: "Process Automation",
-      description: "Create powerful automated workflows that handle everything from lead qualification to deal closure without manual intervention.",
-      features: ["Visual workflow builder", "500+ app integrations", "Custom automation triggers", "Real-time workflow monitoring"],
-      icon: "data:image/svg+xml,%3csvg%20width='50'%20height='50'%20viewBox='0%200%2050%2050'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M14.8126%2031.25V18.75V6.25L4%2012.5V25V37.5L14.8126%2043.75L25.608%2050L36.4206%2043.75L25.608%2037.5L14.8126%2031.25Z'%20fill='%23098EC2'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M25.6079%2012.5V25L36.4205%2031.25L47.216%2037.5V25L36.4205%2018.75V6.25L25.6079%200V12.5Z'%20fill='%237697FB'/%3e%3c/svg%3e",
-      // status: "Active",
-      benefits: ["Automate complex sales processes", "Reduce manual tasks by 80%", "Create custom business logic without coding"]
-    }
+    // {
+    //   id: 6,
+    //   name: "Workflow Integration",
+    //   category: "Process Automation",
+    //   description: "Create powerful automated workflows that handle everything from lead qualification to deal closure without manual intervention.",
+    //   features: ["Visual workflow builder", "500+ app integrations", "Custom automation triggers", "Real-time workflow monitoring"],
+    //   icon: "data:image/svg+xml,%3csvg%20width='50'%20height='50'%20viewBox='0%200%2050%2050'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M14.8126%2031.25V18.75V6.25L4%2012.5V25V37.5L14.8126%2043.75L25.608%2050L36.4206%2043.75L25.608%2037.5L14.8126%2031.25Z'%20fill='%23098EC2'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M25.6079%2012.5V25L36.4205%2031.25L47.216%2037.5V25L36.4205%2018.75V6.25L25.6079%200V12.5Z'%20fill='%237697FB'/%3e%3c/svg%3e",
+    //   // status: "Active",
+    //   benefits: ["Automate complex sales processes", "Reduce manual tasks by 80%", "Create custom business logic without coding"]
+    // }
   ];
 
   return (
@@ -107,9 +107,9 @@ function Product() {
                   <button className="btn btn-primary btn-lg px-4">
                     Start Free Trial
                   </button>
-                  <button className="btn btn-outline-light btn-lg px-4">
+                  {/* <button className="btn btn-outline-light btn-lg px-4">
                     View All Integrations
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
