@@ -53,8 +53,7 @@ function Pricing() {
                       <span className="h1 mb-0">$59</span> /month
                     </p>
                     <p className="mb-0">
-                      Ideal for small teams, the Basic plan manages up to 10
-                      projects.
+                     Ideal for individual reps or small teams who need an easy way to call leads, log activity, and stay organized.
                     </p>
                   </div>
                   <div className="ms-auto col-md-5">
@@ -79,7 +78,7 @@ function Pricing() {
                               d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06a.733.733 0 0 1 1.047 0l3.052 3.093l5.4-6.425z"
                             />
                           </svg>
-                          Customizable features
+                          Call leads directly from the app
                         </li>
                         <li className="list-group-item d-flex align-items-center heading-color mb-0">
                           <svg
@@ -97,7 +96,7 @@ function Pricing() {
                               d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06a.733.733 0 0 1 1.047 0l3.052 3.093l5.4-6.425z"
                             />
                           </svg>
-                          5 user accounts
+                          Upload CSV files with up to 10 projects
                         </li>
                         <li className="list-group-item d-flex align-items-center heading-color mb-0">
                           <svg
@@ -115,7 +114,7 @@ function Pricing() {
                               d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06a.733.733 0 0 1 1.047 0l3.052 3.093l5.4-6.425z"
                             />
                           </svg>
-                          Customizable features
+                          Recent call history & CRM sync
                         </li>
                         <li className="list-group-item d-flex align-items-center heading-color mb-0">
                           <svg
@@ -133,9 +132,9 @@ function Pricing() {
                               d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06a.733.733 0 0 1 1.047 0l3.052 3.093l5.4-6.425z"
                             />
                           </svg>
-                          10 GB storage
+                          Automated deal creation
                         </li>
-                        <li className="list-group-item d-flex align-items-center heading-color mb-0">
+                        {/* <li className="list-group-item d-flex align-items-center heading-color mb-0">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -152,7 +151,7 @@ function Pricing() {
                             />
                           </svg>
                           Email support
-                        </li>
+                        </li> */}
                       </ul>
                       <a
                         className="btn btn-dark icon-link icon-link-hover justify-content-center mb-0"
@@ -201,8 +200,7 @@ function Pricing() {
                       <span className="h1 mb-0">$99</span> /month
                     </p>
                     <p className="mb-0">
-                      Get priority email support and access to premium templates
-                      for a more comprehensive solution.
+                     Perfect for growing teams that need advanced features, larger storage, and priority support to scale faster.
                     </p>
                   </div>
                   <div className="ms-auto col-md-5">
@@ -227,7 +225,7 @@ function Pricing() {
                               d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06a.733.733 0 0 1 1.047 0l3.052 3.093l5.4-6.425z"
                             />
                           </svg>
-                          Access to basic features
+                          Everything in the Basic plan
                         </li>
                         <li className="list-group-item d-flex align-items-center heading-color mb-0">
                           <svg
@@ -245,7 +243,7 @@ function Pricing() {
                               d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06a.733.733 0 0 1 1.047 0l3.052 3.093l5.4-6.425z"
                             />
                           </svg>
-                          15 user accounts
+                          Automated follow-up workflows
                         </li>
                         <li className="list-group-item d-flex align-items-center heading-color mb-0">
                           <svg
@@ -263,7 +261,7 @@ function Pricing() {
                               d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06a.733.733 0 0 1 1.047 0l3.052 3.093l5.4-6.425z"
                             />
                           </svg>
-                          Customizable features
+                          Dedicated account manager & priority email support
                         </li>
                         <li className="list-group-item d-flex align-items-center heading-color mb-0">
                           <svg
@@ -281,9 +279,9 @@ function Pricing() {
                               d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06a.733.733 0 0 1 1.047 0l3.052 3.093l5.4-6.425z"
                             />
                           </svg>
-                          50 GB storage
+                          CRM deep integration
                         </li>
-                        <li className="list-group-item d-flex align-items-center heading-color mb-0">
+                        {/* <li className="list-group-item d-flex align-items-center heading-color mb-0">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -300,7 +298,7 @@ function Pricing() {
                             />
                           </svg>
                           Dedicated account manager
-                        </li>
+                        </li> */}
                       </ul>
                       <a
                         className="btn btn-dark icon-link icon-link-hover justify-content-center mb-0"
