@@ -25,7 +25,7 @@ function Contact() {
       </section>
       <section className="pt-0 mt-n6 mt-lg-n7 mt-xl-n8">
         <div className="container">
-          <div className="g-4 g-lg-5 row">
+          <div className="g-4 g-lg-5 row" style={{marginTop: "30px"}}>
             <div className="col-md-4">
               <div className="bg-secondary rounded-4 p-4 h-100 card">
                 <div className="p-0 card-body">

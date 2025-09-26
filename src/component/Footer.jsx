@@ -32,12 +32,12 @@ function Footer() {
                 <h6 className="mb-3 mb-sm-4">Company</h6>
                 <ul className="nav flex-column gap-1">
                   <li className="nav-item">
-                    <a className="nav-link pt-0" href="#" data-discover="true">
+                    <a className="nav-link pt-0" href="/about" data-discover="true">
                       About us
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#" data-discover="true">
+                    <a className="nav-link" href="/contact" data-discover="true">
                       Contact us
                     </a>
                   </li>
@@ -47,7 +47,7 @@ function Footer() {
                 <h6 className="mb-3 mb-sm-4">Resources</h6>
                 <ul className="nav flex-column gap-1">
                   <li className="nav-item">
-                    <a className="nav-link" href="#" data-discover="true">
+                    <a className="nav-link" href="/pricing" data-discover="true">
                       Pricing <span className="badge bg-success ms-2">New</span>
                     </a>
                   </li>
@@ -73,7 +73,7 @@ function Footer() {
                   />
                 </a>
               </div>
-              <div className="col-6 col-sm-5">
+              {/* <div className="col-6 col-sm-5">
                 <a href="#" data-discover="true">
                   <img
                     width={140}
@@ -82,7 +82,7 @@ function Footer() {
                     alt="app-store"
                   />
                 </a>
-              </div>
+              </div> */}
             </div>
             <span className="heading-color fw-semibold">Follow on:</span>
             <ul className="list-inline mb-0">

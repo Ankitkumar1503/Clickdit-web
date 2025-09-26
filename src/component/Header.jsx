@@ -10,7 +10,7 @@ const Header = () => {
   const [currentPath, setCurrentPath] = useState('');
   const location = useLocation();
 
-  const isDarkPage = location.pathname === '/about' || location.pathname === '/contact';
+  const isDarkPage = location.pathname === '/about' || location.pathname === '/contact' || location.pathname === '/product';
   
   useEffect(() => {
     // Get current path for active state
@@ -29,7 +29,7 @@ const Header = () => {
   // Navigation items
   const navItems = [
     { path: '/', label: 'Home' },
-    // { path: '/product', label: 'Product' },
+    { path: '/product', label: 'Product' },
     { path: '/about', label: 'About Us' },
     { path: '/contact', label: 'Contact Us' }
   ];

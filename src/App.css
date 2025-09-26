@@ -20360,3 +20360,15 @@ button.text-primary-hover:hover {
   align-items: center;
   justify-content: center;
 }
+
+.pricing_custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
